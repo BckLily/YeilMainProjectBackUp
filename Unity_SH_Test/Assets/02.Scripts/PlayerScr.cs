@@ -47,7 +47,7 @@ public class PlayerScr : MonoBehaviour
 
     [Header("기타 플레이어 변수")]
     [SerializeField]
-    private bool isWalk; // Player가 걷는가
+    private bool isMove; // Player가 걷는가
     //private bool isRun; // Player가 달리는가
     [SerializeField]
     private bool isCrouch; // Player가 앉아 있는가
@@ -99,22 +99,34 @@ public class PlayerScr : MonoBehaviour
         playerName = string.Format("Player1");
         playerClass = PlayerClass.SOLDIER;
 
-        isWalk = false;
+        isMove = false;
         isCrouch = false;
-        
 
+        playerAnim = GetComponent<Animator>();
+    }
+
+    private void FixedUpdate()
+    {
+        TryCrouch();
+        PlayerMove();
     }
 
     // Update is called once per frame
     void Update()
     {
-        TryCrouch();
-        PlayerMove();
+        //TryCrouch();
+        //PlayerMove();
+        //PlayerRotation();
+        //UpperBodyRotation();
+
+
+
+    }
+
+    private void LateUpdate()
+    {
         PlayerRotation();
         UpperBodyRotation();
-
-
-
     }
 
     // 앉는 동작을 시도하는 함수
@@ -158,18 +170,27 @@ public class PlayerScr : MonoBehaviour
                 TryCrouch();
             }
         }
-        else if(Input.GetKeyUp(KeyCode.LeftShift))
+        else if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             useSpeed = walkSpeed;
         }
 
-        // playerAnim.SetFloat("Speed", useSpeed");
 
         Vector3 dir = new Vector3(h, 0f, v);
         dir.Normalize();
         dir *= useSpeed * Time.deltaTime;
 
+        if (dir.magnitude >= 0.01f) { isMove = true; }
+        else { isMove = false; }
+
+
+        playerAnim.SetFloat("Horizontal", h);
+        playerAnim.SetFloat("Vertical", v);
+        playerAnim.SetBool("IsMove", isMove);
+        playerAnim.SetFloat("Speed", useSpeed);
+
         tr.Translate(dir);
+        Debug.Log(dir);
 
     }
 
@@ -179,7 +200,7 @@ public class PlayerScr : MonoBehaviour
         Vector3 characterRotationY = new Vector3(0f, yRotation, 0f) * lookSensitivity;
 
         myRb.MoveRotation(myRb.rotation * Quaternion.Euler(characterRotationY));
-
+        
     }
 
     private void UpperBodyRotation()
