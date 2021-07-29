@@ -319,46 +319,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 68841963, guid: c5cacb526250260418d8b77940c2432c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.178
-      objectReference: {fileID: 0}
-    - target: {fileID: 68841963, guid: c5cacb526250260418d8b77940c2432c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.058
-      objectReference: {fileID: 0}
-    - target: {fileID: 68841963, guid: c5cacb526250260418d8b77940c2432c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.022
-      objectReference: {fileID: 0}
-    - target: {fileID: 68841963, guid: c5cacb526250260418d8b77940c2432c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7619658
-      objectReference: {fileID: 0}
-    - target: {fileID: 68841963, guid: c5cacb526250260418d8b77940c2432c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.05003444
-      objectReference: {fileID: 0}
-    - target: {fileID: 68841963, guid: c5cacb526250260418d8b77940c2432c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.64377505
-      objectReference: {fileID: 0}
-    - target: {fileID: 68841963, guid: c5cacb526250260418d8b77940c2432c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.049582265
-      objectReference: {fileID: 0}
-    - target: {fileID: 68841963, guid: c5cacb526250260418d8b77940c2432c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -0.711
-      objectReference: {fileID: 0}
-    - target: {fileID: 68841963, guid: c5cacb526250260418d8b77940c2432c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -80.438
-      objectReference: {fileID: 0}
-    - target: {fileID: 68841963, guid: c5cacb526250260418d8b77940c2432c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 8.047
-      objectReference: {fileID: 0}
     - target: {fileID: 221120355182037538, guid: c5cacb526250260418d8b77940c2432c, type: 3}
       propertyPath: m_RootOrder
       value: 2

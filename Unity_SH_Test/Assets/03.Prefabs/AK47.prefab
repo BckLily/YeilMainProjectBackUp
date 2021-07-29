@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2708432242808631248}
   - component: {fileID: 6440860147355254311}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 7.62x39
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4950476263404441305}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1392691581970338885}
   - component: {fileID: 8198187736998376791}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: holder_b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 8567009527208250205}
   - component: {fileID: 1760381921142384167}
   - component: {fileID: -4178651425722214252}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AK47
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -270,8 +270,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bb712ac5db2e554582a465695398883, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemGun: {fileID: 11400000, guid: 5d7cc0df2cb7fe54ea28c18e4abc49b6, type: 2}
-  firePos: {fileID: 0}
+  itemGun: {fileID: 11400000, guid: b9c71483a316d5b48bd7a4b73e3aa748, type: 2}
+  firePos: {fileID: 498177352333322305}
   currBullet: 0
   carryBullet: 0
   fireDelay: 0
@@ -285,7 +285,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 498177352333322305}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FirePos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -315,7 +315,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9042134345282468818}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ak47_rig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -347,7 +347,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9144235787190260128}
   - component: {fileID: 7366341434878954703}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: holder_a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -432,7 +432,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3963234045548949629}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: reload
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -462,7 +462,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 198463271298150375}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: magazine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -493,7 +493,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5663147769298374022}
   - component: {fileID: 4139675805937123742}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ak47
   m_TagString: Untagged
   m_Icon: {fileID: 0}

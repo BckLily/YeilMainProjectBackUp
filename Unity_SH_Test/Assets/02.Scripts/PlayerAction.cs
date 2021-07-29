@@ -7,6 +7,7 @@ public class PlayerAction : MonoBehaviour
 {
     private Transform tr; // Player의 Transform
 
+
     private bool isBuild; // 플레이어가 물자를 건설하고 있는가
     private bool isBuy; // 플레이어가 상점을 이용하고 있는가
     private bool isHeal; // 플레이어가 회복을 하고 있는가
@@ -25,10 +26,6 @@ public class PlayerAction : MonoBehaviour
         isBuild = false;
         isBuy = false;
         isHeal = false;
-
-
-
-
 
     }
 

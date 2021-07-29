@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class WeaponManager : MonoBehaviour
 {
-
-    public Transform weaponPos; // weaponPos
+    public Transform playerCameraTr; // 플레이어 카메라.
+    Transform weaponPos; // weaponPos
 
     private GameObject currWeapon; // 현재 총.
     private GunsScr currGunScr; // 총이 가지고 있는 gunScr
@@ -25,7 +25,7 @@ public class WeaponManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        weaponPos.forward = playerCameraTr.forward;
         TryReload();
         TryFire();
 
@@ -67,6 +67,7 @@ public class WeaponManager : MonoBehaviour
             // 가지고 있는 총알이 0발보다 많은 경우
             if(currGunScr.carryBullet > 0)
             {
+                Debug.Log("Reload");
                 // isReload를 true로 변경
                 isReload = true;
                 // 재장전 동작이 끝날 때까지 기다린다.

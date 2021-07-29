@@ -18,6 +18,6 @@ MonoBehaviour:
   maxBullet: 350
   damage: 10
   fireDelay: 0.15
-  reloadTime: 0.3
+  reloadTime: 0.6
   gunPrefab: {fileID: 4665579811491838286, guid: ca759115b1ab4ca45b7ecde65504647a, type: 3}
   itemImage: {fileID: 0}
